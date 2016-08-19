@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:c="http://www.springframework.org/schema/c" xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:lang="http://www.springframework.org/schema/lang" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- MVC 相关的注解驱动 -->
+    <mvc:annotation-driven>  
+    	<!-- 处理responseBody 里面日期类型 -->  
+		<mvc:message-converters>  
+		     <ref bean="mappingJackson2HttpMessageConverter" />
+		</mvc:message-converters>  
+    </mvc:annotation-driven>
+
+    <!-- 该扫描器的目地是只加载controller相关的MVC组件  注：如果有Service组件并且有代理类(如：配置了aop)，则该组件代理类实例并不会加载到IOC容器中-->
+    <context:component-scan base-package="com.gtjt.xxjss.springmvc.web.controller" />
+    
+    <!-- supportedMediaTypes集合 -->
+    <util:list id="supportedMediaTypes">
+    	<value>text/html; charset=UTF-8</value>
+        <value>application/json;charset=UTF-8</value>
+    </util:list>
+    
+    <!-- JACKSON转换器配置 --> 
+    <bean id="mappingJackson2HttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+		<property name="supportedMediaTypes" ref="supportedMediaTypes" />
+		<property name="objectMapper">
+			<bean class="com.fasterxml.jackson.databind.ObjectMapper">
+				<property name="dateFormat">
+					<bean class="java.text.SimpleDateFormat">
+						<constructor-arg type="java.lang.String" value="yyyy-MM-dd HH:mm:ss" />
+					</bean>
+				</property>
+			</bean>
+		</property>
+	</bean>
+    
+  	<!-- JSON转换配置 --> 
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+            	<ref bean="mappingJackson2HttpMessageConverter" />
+                <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                    <property name="supportedMediaTypes" ref="supportedMediaTypes" />
+                </bean>
+            </list>
+        </property>
+    </bean>
+    
+    <!-- 视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">    
+    	<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    
+    <!-- 静态资源映射  cache-period：1年 (365.24 天) 31556926-->
+	<mvc:resources mapping="/resources/**"  location="/resources/" cache-period="-1" />
+
+	<!-- 文件上传配置 -->
+	<!-- <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> <property name="defaultEncoding"> <value>UTF-8</value> </property> <property name="maxUploadSize"> <value>32505856</value> </property> <property name="maxInMemorySize"> <value>4096</value> </property> </bean> -->
+
+	<!--拦截器 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<!-- 用户认证拦截 -->
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/resources/**" />
+			<bean class="com.gtjt.xxjss.springmvc.security.interceptors.LoginInterceptor"></bean>
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<!-- 授权拦截 -->
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/resources/**" />
+			<bean class="com.gtjt.xxjss.springmvc.security.interceptors.PermissionInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+</beans>

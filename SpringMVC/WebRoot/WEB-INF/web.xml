@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+	<!-- 项目名称 -->
+	<display-name>SpringMVC</display-name>
+	
+	<!-- 路径变量 -->
+    <context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>SpringMVC.root</param-value>
+	</context-param>
+	
+	<!-- 开启spring功能 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- 指定spring相关文件的位置 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext.xml</param-value>
+	</context-param>
+	
+	<!-- 配置session超时时间，单位分钟 -->
+	<session-config>
+		<session-timeout>120</session-timeout>
+	</session-config>
+
+	<!-- 编码统一最好放最上面，最先加载，防止乱码 -->
+	<filter>
+		<filter-name>SetCharacterEncoding</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value><!-- 强制进行转码 -->
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>SetCharacterEncoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- druid数据源Web监控配置 -->
+	<filter>
+		<filter-name>druidWebStatFilter</filter-name>
+		<filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
+		<init-param>
+			<param-name>exclusions</param-name>
+			<param-value>/css/*,/style/*,/jslib/*,*.js,*.css,/druid*,/attached/*,*.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>principalSessionName</param-name>
+			<param-value>sessionInfo</param-value>
+		</init-param>
+		<init-param>
+			<param-name>profileEnable</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+	<!-- druid数据源Web监控配置mapping -->
+	<filter-mapping>
+		<filter-name>druidWebStatFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- druid监控页面，使用${pageContext.request.contextPath}/druid/index.html访问 -->
+	<servlet>
+		<servlet-name>druidStatView</servlet-name>
+		<servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+	</servlet>
+	
+	<!-- druid监控页面mapping -->
+	<servlet-mapping>
+		<servlet-name>druidStatView</servlet-name>
+		<url-pattern>/druid/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- 配置spring mvc -->
+	<servlet>
+		<servlet-name>SpringMVC</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:springmvc-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<!-- 配置springmvc mapping -->
+	<servlet-mapping>
+		<servlet-name>SpringMVC</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<!-- webAppRootKey：值缺省为webapp.root，当Tomcat下部署多个应用时(每个都用到了log4j)，
+		每个应用的web.xml中都要配置该参数，该参数与Log4j.xml文件中的${webapp.root}对应，
+		 否则每个应用的webAppRootKey值都相同，就会引起冲突 -->
+	<context-param>
+		<param-name>log4jConfigLocation</param-name>
+		<param-value>classpath:log4j.properties</param-value>
+	</context-param>
+	
+	<listener>
+	 	<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+	</listener>
+
+	<!-- 防止内存溢出监听器 -->
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+
+	<!-- 设置欢迎页面 -->
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/jsp/login.jsp</welcome-file>
+	</welcome-file-list> 
+
+	<!-- 找不到页错误转向 -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/jsp/error/404.jsp</location>
+	</error-page>
+	
+	<!-- 系统内部错误转向 -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/jsp/error/500.jsp</location>
+	</error-page>
+	
+	<jsp-config>
+		<taglib>
+	        <taglib-uri>http://www.gtjt.xxjss.com/rbac/functions</taglib-uri>
+	        <taglib-location>/WEB-INF/rbac.tld</taglib-location>
+		</taglib>
+  </jsp-config>
+
+</web-app>

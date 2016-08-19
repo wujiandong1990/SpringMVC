@@ -1,0 +1,1037 @@
+[INFO][2016-08-02 16:20:24,964][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+[INFO][2016-08-02 16:20:24,964][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 16:20:24 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 16:20:24,964][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+[INFO][2016-08-02 16:20:25,512][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/baseController/{folder}/{jspName}]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.BaseController.redirectJsp(java.lang.String,java.lang.String)
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.index()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutNorth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutNorth()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutSouth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutSouth()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutWest]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutWset()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalIndex]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalIndex()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalLink]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalLink()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalRepair]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalRepair()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalAbout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalAbout()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalSeq]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalSeq()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/druidController/druid]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.DruidController.druid()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.permissionVo)
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.manager()
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/permissionList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.permissionVo> com.gtjt.xxjss.springmvc.web.controller.PermissionController.treeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,527][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.addPage(javax.servlet.http.HttpServletRequest)
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.RoleController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.RoleController.manager()
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/roleList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.RoleVo> com.gtjt.xxjss.springmvc.web.controller.RoleController.getTreeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.delete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.manager()
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.logout(javax.servlet.http.HttpSession)
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.addPage(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/batchDelete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.batchDelete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,545][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPwdPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,561][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/grantPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.grantPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,561][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,561][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editPwd(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,561][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/userList]}" onto public com.gtjt.xxjss.springmvc.web.vo.DataGrid com.gtjt.xxjss.springmvc.web.controller.UserController.getUserDataGrid(com.gtjt.xxjss.springmvc.web.vo.UserVo,com.gtjt.xxjss.springmvc.web.vo.Page) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,561][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwd(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:25,561][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwdPage() throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,280][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 16:20:24 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 16:20:26,374][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 16:20:24 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/baseController/{folder}/{jspName}]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.BaseController.redirectJsp(java.lang.String,java.lang.String)
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.index()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutNorth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutNorth()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutSouth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutSouth()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutWest]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutWset()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalIndex]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalIndex()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalLink]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalLink()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalRepair]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalRepair()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalAbout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalAbout()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalSeq]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalSeq()
+[INFO][2016-08-02 16:20:26,467][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/druidController/druid]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.DruidController.druid()
+[INFO][2016-08-02 16:20:26,483][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.permissionVo)
+[INFO][2016-08-02 16:20:26,483][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,483][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.manager()
+[INFO][2016-08-02 16:20:26,483][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/permissionList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.permissionVo> com.gtjt.xxjss.springmvc.web.controller.PermissionController.treeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,483][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.addPage(javax.servlet.http.HttpServletRequest)
+[INFO][2016-08-02 16:20:26,483][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.RoleController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,483][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.RoleController.manager()
+[INFO][2016-08-02 16:20:26,483][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/roleList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.RoleVo> com.gtjt.xxjss.springmvc.web.controller.RoleController.getTreeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.delete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.manager()
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.logout(javax.servlet.http.HttpSession)
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.addPage(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/batchDelete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.batchDelete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPwdPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/grantPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.grantPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editPwd(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/userList]}" onto public com.gtjt.xxjss.springmvc.web.vo.DataGrid com.gtjt.xxjss.springmvc.web.controller.UserController.getUserDataGrid(com.gtjt.xxjss.springmvc.web.vo.UserVo,com.gtjt.xxjss.springmvc.web.vo.Page) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwd(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwdPage() throws java.lang.Exception
+[INFO][2016-08-02 16:20:26,514][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 16:20:24 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 16:20:26,586][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-08-02 16:20:26,711][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1747 ms
+[ERROR][2016-08-02 16:25:05,491][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:25:05,492][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:05,492][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:05,492][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,360][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:25:09,362][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:25:09,363][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,364][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,365][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,365][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,366][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,367][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,367][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,368][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,368][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,370][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,370][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,371][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:25:09,372][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,373][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,374][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,375][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,376][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,376][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,377][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,378][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,379][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:25:09,379][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,380][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,381][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,381][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,382][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,383][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:25:09,383][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:28:19,651][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:28:19,652][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:28:19,652][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:28:19,653][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,561][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:29:09,561][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:29:09,562][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,562][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,563][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,563][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,564][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,564][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,564][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,565][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,565][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,566][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,566][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,567][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:29:09,568][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,568][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,569][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,570][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,570][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,571][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,572][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,573][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,574][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:29:09,574][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,575][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,576][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,577][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,579][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,580][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,580][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,581][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,598][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 16:29:09,599][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,599][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 16:29:09,600][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[INFO][2016-08-02 18:53:33,259][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+[INFO][2016-08-02 18:53:33,264][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 18:53:33 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 18:53:33,266][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+[INFO][2016-08-02 18:53:33,823][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/baseController/{folder}/{jspName}]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.BaseController.redirectJsp(java.lang.String,java.lang.String)
+[INFO][2016-08-02 18:53:33,841][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.index()
+[INFO][2016-08-02 18:53:33,842][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutNorth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutNorth()
+[INFO][2016-08-02 18:53:33,842][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutWest]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutWset()
+[INFO][2016-08-02 18:53:33,843][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutSouth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutSouth()
+[INFO][2016-08-02 18:53:33,843][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalIndex]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalIndex()
+[INFO][2016-08-02 18:53:33,844][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalLink]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalLink()
+[INFO][2016-08-02 18:53:33,844][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalRepair]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalRepair()
+[INFO][2016-08-02 18:53:33,844][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalAbout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalAbout()
+[INFO][2016-08-02 18:53:33,845][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalSeq]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalSeq()
+[INFO][2016-08-02 18:53:33,847][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/druidController/druid]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.DruidController.druid()
+[INFO][2016-08-02 18:53:33,859][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo)
+[INFO][2016-08-02 18:53:33,860][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.delete(java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,860][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,861][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.manager()
+[INFO][2016-08-02 18:53:33,862][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/permissionList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.PermissionVo> com.gtjt.xxjss.springmvc.web.controller.PermissionController.treeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,862][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.addPage(javax.servlet.http.HttpServletRequest)
+[INFO][2016-08-02 18:53:33,863][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,863][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,867][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.RoleController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,868][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.RoleController.manager()
+[INFO][2016-08-02 18:53:33,869][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/roleList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.RoleVo> com.gtjt.xxjss.springmvc.web.controller.RoleController.getTreeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,893][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,893][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.delete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,894][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.manager()
+[INFO][2016-08-02 18:53:33,894][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.addPage(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,894][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,895][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/batchDelete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.batchDelete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,895][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPwdPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,895][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/grantPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.grantPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,896][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,896][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.logout(javax.servlet.http.HttpSession)
+[INFO][2016-08-02 18:53:33,896][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwdPage() throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,897][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,897][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editPwd(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,898][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/userList]}" onto public com.gtjt.xxjss.springmvc.web.vo.DataGrid com.gtjt.xxjss.springmvc.web.controller.UserController.getUserDataGrid(com.gtjt.xxjss.springmvc.web.vo.UserVo,com.gtjt.xxjss.springmvc.web.vo.Page) throws java.lang.Exception
+[INFO][2016-08-02 18:53:33,898][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwd(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,595][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 18:53:33 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 18:53:34,723][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 18:53:33 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 18:53:34,834][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/baseController/{folder}/{jspName}]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.BaseController.redirectJsp(java.lang.String,java.lang.String)
+[INFO][2016-08-02 18:53:34,842][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.index()
+[INFO][2016-08-02 18:53:34,842][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutNorth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutNorth()
+[INFO][2016-08-02 18:53:34,843][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutWest]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutWset()
+[INFO][2016-08-02 18:53:34,843][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutSouth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutSouth()
+[INFO][2016-08-02 18:53:34,843][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalIndex]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalIndex()
+[INFO][2016-08-02 18:53:34,844][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalLink]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalLink()
+[INFO][2016-08-02 18:53:34,845][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalRepair]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalRepair()
+[INFO][2016-08-02 18:53:34,845][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalAbout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalAbout()
+[INFO][2016-08-02 18:53:34,846][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalSeq]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalSeq()
+[INFO][2016-08-02 18:53:34,847][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/druidController/druid]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.DruidController.druid()
+[INFO][2016-08-02 18:53:34,853][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo)
+[INFO][2016-08-02 18:53:34,854][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.delete(java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,854][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,855][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.manager()
+[INFO][2016-08-02 18:53:34,855][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/permissionList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.PermissionVo> com.gtjt.xxjss.springmvc.web.controller.PermissionController.treeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,856][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.addPage(javax.servlet.http.HttpServletRequest)
+[INFO][2016-08-02 18:53:34,856][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,858][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,861][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.RoleController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,862][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.RoleController.manager()
+[INFO][2016-08-02 18:53:34,862][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/roleList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.RoleVo> com.gtjt.xxjss.springmvc.web.controller.RoleController.getTreeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,880][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,881][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.delete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,881][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.manager()
+[INFO][2016-08-02 18:53:34,882][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.addPage(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,882][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,883][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/batchDelete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.batchDelete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,883][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPwdPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,884][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/grantPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.grantPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,884][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,884][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.logout(javax.servlet.http.HttpSession)
+[INFO][2016-08-02 18:53:34,885][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwdPage() throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,885][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,885][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editPwd(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,886][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/userList]}" onto public com.gtjt.xxjss.springmvc.web.vo.DataGrid com.gtjt.xxjss.springmvc.web.controller.UserController.getUserDataGrid(com.gtjt.xxjss.springmvc.web.vo.UserVo,com.gtjt.xxjss.springmvc.web.vo.Page) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,886][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwd(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 18:53:34,908][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 18:53:33 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 18:53:35,052][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-08-02 18:53:35,201][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1941 ms
+[ERROR][2016-08-02 18:54:04,041][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 18:54:04,043][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:04,043][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:04,044][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,180][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 18:54:09,182][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 18:54:09,183][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,184][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,185][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,185][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,186][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,187][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,187][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,188][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,189][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,190][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,190][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,191][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 18:54:09,192][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,193][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,193][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,194][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,195][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,195][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,196][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,197][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,197][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 18:54:09,198][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,199][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,199][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,200][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,200][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,201][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,202][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 18:54:09,203][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:37,133][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:39:37,134][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:37,134][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:37,134][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,633][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:39:38,634][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:39:38,634][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,635][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,636][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,636][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,637][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,637][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,638][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,638][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,639][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,640][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,640][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,641][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:39:38,641][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,642][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,645][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,645][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,646][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,646][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,647][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,648][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,648][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:39:38,649][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,650][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,651][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,652][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,653][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,653][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,655][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:38,656][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:42,484][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:39:42,484][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:42,485][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:39:42,485][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,461][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:40:35,462][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:40:35,462][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,462][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,463][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,463][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,463][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,464][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,464][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,464][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,465][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,465][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,465][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,466][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:40:35,466][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,466][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,466][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,467][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,467][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,467][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,468][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,468][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,468][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:40:35,469][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,469][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,469][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,469][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,470][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,470][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,470][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,478][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,479][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,549][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:40:35,550][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,550][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:40:35,550][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:45:51,894][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:45:51,894][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:45:51,894][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:45:51,894][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[INFO][2016-08-02 22:51:05,426][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+[INFO][2016-08-02 22:51:05,429][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 22:51:05 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 22:51:05,431][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+[INFO][2016-08-02 22:51:06,004][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/baseController/{folder}/{jspName}]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.BaseController.redirectJsp(java.lang.String,java.lang.String)
+[INFO][2016-08-02 22:51:06,020][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.index()
+[INFO][2016-08-02 22:51:06,021][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutNorth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutNorth()
+[INFO][2016-08-02 22:51:06,021][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutWest]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutWset()
+[INFO][2016-08-02 22:51:06,022][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutSouth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutSouth()
+[INFO][2016-08-02 22:51:06,022][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalIndex]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalIndex()
+[INFO][2016-08-02 22:51:06,022][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalLink]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalLink()
+[INFO][2016-08-02 22:51:06,023][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalRepair]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalRepair()
+[INFO][2016-08-02 22:51:06,023][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalAbout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalAbout()
+[INFO][2016-08-02 22:51:06,023][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalSeq]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalSeq()
+[INFO][2016-08-02 22:51:06,025][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/druidController/druid]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.DruidController.druid()
+[INFO][2016-08-02 22:51:06,040][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo)
+[INFO][2016-08-02 22:51:06,040][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.delete(java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,041][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.manager()
+[INFO][2016-08-02 22:51:06,041][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,042][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.getTreeMenu(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,042][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/permissionList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.PermissionVo> com.gtjt.xxjss.springmvc.web.controller.PermissionController.treeGrid() throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,043][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.addPage(javax.servlet.http.HttpServletRequest)
+[INFO][2016-08-02 22:51:06,043][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,047][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.RoleController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,048][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.RoleController.manager()
+[INFO][2016-08-02 22:51:06,049][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/roleList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.RoleVo> com.gtjt.xxjss.springmvc.web.controller.RoleController.getTreeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,064][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,065][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.delete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,065][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.manager()
+[INFO][2016-08-02 22:51:06,065][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,066][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.logout(javax.servlet.http.HttpSession)
+[INFO][2016-08-02 22:51:06,067][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/userList]}" onto public com.gtjt.xxjss.springmvc.web.vo.DataGrid com.gtjt.xxjss.springmvc.web.controller.UserController.getUserDataGrid(com.gtjt.xxjss.springmvc.web.vo.UserVo,com.gtjt.xxjss.springmvc.web.vo.Page) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,067][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwd(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,067][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,068][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editPwd(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,068][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.addPage(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,068][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,068][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/batchDelete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.batchDelete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,069][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPwdPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,069][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/grantPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.grantPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:06,070][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwdPage() throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,047][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 22:51:05 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 22:51:07,212][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 22:51:05 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 22:51:07,366][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/baseController/{folder}/{jspName}]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.BaseController.redirectJsp(java.lang.String,java.lang.String)
+[INFO][2016-08-02 22:51:07,375][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.index()
+[INFO][2016-08-02 22:51:07,375][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutNorth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutNorth()
+[INFO][2016-08-02 22:51:07,375][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutWest]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutWset()
+[INFO][2016-08-02 22:51:07,376][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutSouth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutSouth()
+[INFO][2016-08-02 22:51:07,377][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalIndex]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalIndex()
+[INFO][2016-08-02 22:51:07,378][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalLink]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalLink()
+[INFO][2016-08-02 22:51:07,378][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalRepair]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalRepair()
+[INFO][2016-08-02 22:51:07,379][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalAbout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalAbout()
+[INFO][2016-08-02 22:51:07,379][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalSeq]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalSeq()
+[INFO][2016-08-02 22:51:07,380][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/druidController/druid]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.DruidController.druid()
+[INFO][2016-08-02 22:51:07,387][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo)
+[INFO][2016-08-02 22:51:07,388][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.delete(java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,388][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.manager()
+[INFO][2016-08-02 22:51:07,389][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,389][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.getTreeMenu(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,389][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/permissionList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.PermissionVo> com.gtjt.xxjss.springmvc.web.controller.PermissionController.treeGrid() throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,390][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.addPage(javax.servlet.http.HttpServletRequest)
+[INFO][2016-08-02 22:51:07,390][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,393][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.RoleController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,394][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.RoleController.manager()
+[INFO][2016-08-02 22:51:07,394][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/roleList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.RoleVo> com.gtjt.xxjss.springmvc.web.controller.RoleController.getTreeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,405][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,407][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.delete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,407][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.manager()
+[INFO][2016-08-02 22:51:07,408][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,408][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.logout(javax.servlet.http.HttpSession)
+[INFO][2016-08-02 22:51:07,408][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/userList]}" onto public com.gtjt.xxjss.springmvc.web.vo.DataGrid com.gtjt.xxjss.springmvc.web.controller.UserController.getUserDataGrid(com.gtjt.xxjss.springmvc.web.vo.UserVo,com.gtjt.xxjss.springmvc.web.vo.Page) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,408][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwd(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,409][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,409][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editPwd(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,410][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.addPage(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,411][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,411][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/batchDelete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.batchDelete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,411][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPwdPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,412][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/grantPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.grantPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,412][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwdPage() throws java.lang.Exception
+[INFO][2016-08-02 22:51:07,443][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 22:51:05 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 22:51:07,555][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-08-02 22:51:07,700][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 2274 ms
+[ERROR][2016-08-02 22:51:43,903][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:51:43,905][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:43,905][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:43,905][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,042][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:51:46,043][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:51:46,044][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,045][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,046][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,047][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,047][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,048][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,049][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,050][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,051][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,052][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,053][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,054][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:51:46,055][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,056][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,057][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,058][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,059][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,059][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,059][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,060][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,061][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:51:46,062][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,062][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,063][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,064][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,065][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,066][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,067][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,068][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:51:46,069][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,753][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:53:02,755][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:53:02,755][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,756][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,757][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,757][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,758][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,759][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,759][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,760][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,761][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,761][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,762][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,763][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:53:02,763][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,764][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,765][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,766][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,766][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,767][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,768][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,771][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,772][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:53:02,773][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,774][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,774][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,775][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,775][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,776][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,777][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,778][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:02,779][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:06,270][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:53:06,271][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:06,271][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:53:06,272][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,537][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:54:32,538][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:54:32,538][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,539][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,539][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,540][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,540][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,541][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,541][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,542][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,542][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,543][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,544][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,544][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:54:32,545][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,545][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,546][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,547][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,547][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,548][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,549][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,550][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,550][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:54:32,551][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,551][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,552][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,552][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,553][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,554][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,554][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,557][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:32,557][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:42,976][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:54:42,977][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:42,977][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:54:42,977][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:55:35,719][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:55:35,720][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:55:35,720][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:55:35,720][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:42,522][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:57:42,522][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:42,522][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:42,523][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,616][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:57:50,617][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:57:50,618][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,619][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,619][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,620][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,622][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,624][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,624][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,625][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,626][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,628][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,629][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,630][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:57:50,631][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,631][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,632][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,632][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,632][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,633][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,634][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,635][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,635][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:57:50,636][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,636][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,637][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,637][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,638][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,638][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,638][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,639][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:57:50,642][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,831][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:58:08,831][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:58:08,832][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,833][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,833][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,834][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,834][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,835][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,835][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,836][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,836][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,837][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,837][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,838][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:58:08,838][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,839][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,839][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,840][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,840][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,841][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,841][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,841][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,842][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:58:08,842][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,843][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,843][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,844][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,844][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,845][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,845][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,851][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:58:08,852][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,471][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:59:14,472][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:59:14,472][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,473][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,473][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,474][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,475][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,475][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,476][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,477][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,478][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,478][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,479][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,479][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:59:14,480][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,480][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,481][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,481][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,481][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,482][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,482][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,483][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,483][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:59:14,484][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,485][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,486][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,486][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,487][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,487][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,487][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,488][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:14,489][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:17,688][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 22:59:17,688][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:17,689][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 22:59:17,689][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[INFO][2016-08-02 23:44:28,633][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+[INFO][2016-08-02 23:44:28,639][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 23:44:28 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 23:44:28,641][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+[INFO][2016-08-02 23:44:29,146][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/baseController/{folder}/{jspName}]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.BaseController.redirectJsp(java.lang.String,java.lang.String)
+[INFO][2016-08-02 23:44:29,163][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.index()
+[INFO][2016-08-02 23:44:29,164][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutNorth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutNorth()
+[INFO][2016-08-02 23:44:29,164][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutWest]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutWset()
+[INFO][2016-08-02 23:44:29,165][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutSouth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutSouth()
+[INFO][2016-08-02 23:44:29,165][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalIndex]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalIndex()
+[INFO][2016-08-02 23:44:29,165][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalLink]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalLink()
+[INFO][2016-08-02 23:44:29,166][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalRepair]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalRepair()
+[INFO][2016-08-02 23:44:29,166][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalAbout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalAbout()
+[INFO][2016-08-02 23:44:29,166][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalSeq]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalSeq()
+[INFO][2016-08-02 23:44:29,168][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/druidController/druid]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.DruidController.druid()
+[INFO][2016-08-02 23:44:29,180][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo)
+[INFO][2016-08-02 23:44:29,181][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.delete(java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,181][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.manager()
+[INFO][2016-08-02 23:44:29,182][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/treePermission]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.getTreePermission() throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,182][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.getTreeMenu(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,183][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/permissionList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.PermissionVo> com.gtjt.xxjss.springmvc.web.controller.PermissionController.treeGrid() throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,183][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.addPage(javax.servlet.http.HttpServletRequest)
+[INFO][2016-08-02 23:44:29,183][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,184][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,189][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.RoleController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,190][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.RoleController.manager()
+[INFO][2016-08-02 23:44:29,195][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/roleList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.RoleVo> com.gtjt.xxjss.springmvc.web.controller.RoleController.getTreeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,212][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,213][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.delete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,213][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.manager()
+[INFO][2016-08-02 23:44:29,214][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,214][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.logout(javax.servlet.http.HttpSession)
+[INFO][2016-08-02 23:44:29,215][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/userList]}" onto public com.gtjt.xxjss.springmvc.web.vo.DataGrid com.gtjt.xxjss.springmvc.web.controller.UserController.getUserDataGrid(com.gtjt.xxjss.springmvc.web.vo.UserVo,com.gtjt.xxjss.springmvc.web.vo.Page) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,215][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwd(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,215][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.addPage(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,216][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,217][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/batchDelete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.batchDelete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,217][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPwdPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,218][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/grantPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.grantPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,218][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,218][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editPwd(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,219][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwdPage() throws java.lang.Exception
+[INFO][2016-08-02 23:44:29,880][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 23:44:28 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 23:44:29,989][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 23:44:28 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 23:44:30,091][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/baseController/{folder}/{jspName}]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.BaseController.redirectJsp(java.lang.String,java.lang.String)
+[INFO][2016-08-02 23:44:30,098][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.index()
+[INFO][2016-08-02 23:44:30,099][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutNorth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutNorth()
+[INFO][2016-08-02 23:44:30,099][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutWest]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutWset()
+[INFO][2016-08-02 23:44:30,099][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/layoutSouth]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.layoutSouth()
+[INFO][2016-08-02 23:44:30,100][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalIndex]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalIndex()
+[INFO][2016-08-02 23:44:30,100][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalLink]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalLink()
+[INFO][2016-08-02 23:44:30,100][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalRepair]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalRepair()
+[INFO][2016-08-02 23:44:30,101][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalAbout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalAbout()
+[INFO][2016-08-02 23:44:30,101][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/portalSeq]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.CommonController.portalSeq()
+[INFO][2016-08-02 23:44:30,102][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/druidController/druid]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.DruidController.druid()
+[INFO][2016-08-02 23:44:30,109][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo)
+[INFO][2016-08-02 23:44:30,110][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.delete(java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,110][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.manager()
+[INFO][2016-08-02 23:44:30,111][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/treePermission]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.getTreePermission() throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,111][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.PermissionController.getTreeMenu(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,112][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/permissionList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.PermissionVo> com.gtjt.xxjss.springmvc.web.controller.PermissionController.treeGrid() throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,112][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.addPage(javax.servlet.http.HttpServletRequest)
+[INFO][2016-08-02 23:44:30,112][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.PermissionController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,113][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/permission/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.PermissionController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.PermissionVo) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,116][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/tree]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.Tree> com.gtjt.xxjss.springmvc.web.controller.RoleController.tree(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,116][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.RoleController.manager()
+[INFO][2016-08-02 23:44:30,117][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/role/roleList]}" onto public java.util.List<com.gtjt.xxjss.springmvc.web.vo.RoleVo> com.gtjt.xxjss.springmvc.web.controller.RoleController.getTreeGrid(javax.servlet.http.HttpSession) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,127][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/add]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.add(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,128][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/delete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.delete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,128][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/manager]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.manager()
+[INFO][2016-08-02 23:44:30,129][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,129][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.logout(javax.servlet.http.HttpSession)
+[INFO][2016-08-02 23:44:30,130][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/userList]}" onto public com.gtjt.xxjss.springmvc.web.vo.DataGrid com.gtjt.xxjss.springmvc.web.controller.UserController.getUserDataGrid(com.gtjt.xxjss.springmvc.web.vo.UserVo,com.gtjt.xxjss.springmvc.web.vo.Page) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,130][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwd(javax.servlet.http.HttpSession,java.lang.String,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,131][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/addPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.addPage(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,131][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,131][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/batchDelete]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.batchDelete(javax.servlet.http.HttpSession,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,132][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editPwdPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,132][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/grantPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.grantPage(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,132][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/edit]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.edit(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,133][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editPwd]}" onto public com.gtjt.xxjss.springmvc.web.vo.Json com.gtjt.xxjss.springmvc.web.controller.UserController.editPwd(javax.servlet.http.HttpSession,com.gtjt.xxjss.springmvc.web.vo.UserVo) throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,133][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/editCurrentUserPwdPage]}" onto public java.lang.String com.gtjt.xxjss.springmvc.web.controller.UserController.editCurrentUserPwdPage() throws java.lang.Exception
+[INFO][2016-08-02 23:44:30,152][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Tue Aug 02 23:44:28 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-08-02 23:44:30,247][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-08-02 23:44:30,354][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1720 ms
+[ERROR][2016-08-02 23:44:50,999][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:44:51,000][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:51,001][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:51,001][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,644][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:44:52,644][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:44:52,645][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,645][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,646][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,646][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,647][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,647][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,648][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,648][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,649][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,650][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,651][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,652][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:44:52,653][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,654][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,655][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,655][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,656][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,657][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,658][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,659][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,660][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:44:52,660][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,661][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,661][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,662][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,662][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,663][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,664][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,665][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:44:52,666][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:22,126][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:22,127][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:22,127][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:22,128][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:24,208][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:25,357][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:25,364][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,365][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,365][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,365][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,366][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,367][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,368][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,368][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,368][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,369][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,369][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,370][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:25,370][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,371][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,371][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,371][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,372][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,372][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,372][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,373][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,373][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:25,373][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,374][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,374][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,374][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,375][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,375][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,375][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,376][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,377][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,377][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:25,377][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,694][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,695][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,696][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,696][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,697][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,697][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,697][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,698][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,698][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,699][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,699][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,699][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,700][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,700][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,700][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,701][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,701][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,702][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,702][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,702][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,703][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,703][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,703][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,704][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,704][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,704][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,705][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,705][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,705][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,706][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,706][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,706][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,707][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,707][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,708][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,708][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,708][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,709][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,709][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,709][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,710][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,710][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,711][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,711][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,711][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,712][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,712][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,712][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,713][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,713][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,714][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,714][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,714][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,715][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,715][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,715][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,716][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,716][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,717][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,717][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,717][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,718][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,719][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,719][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,719][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,720][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,720][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,720][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,720][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,721][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,721][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,721][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,721][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,722][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,722][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,722][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,723][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,723][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,723][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,724][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,724][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,724][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,725][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,725][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,725][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,726][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,726][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,726][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,727][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,727][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,727][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,728][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,728][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,728][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,729][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,729][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,729][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,730][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,730][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,730][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,731][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,731][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,731][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,732][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,732][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,732][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,733][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,733][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,733][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,733][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,734][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,734][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,734][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,735][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,735][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,735][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,736][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,736][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,736][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,737][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,737][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,737][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,738][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,738][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,738][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,739][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,739][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,739][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,740][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,740][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,740][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,741][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,741][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,741][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,742][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,742][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,742][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,743][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,743][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,743][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,743][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,744][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,744][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,744][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,745][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,745][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,745][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,746][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,746][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,746][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,747][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,747][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,747][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,748][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,748][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,748][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,748][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,748][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,749][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,749][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,749][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,749][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,750][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,750][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,750][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,750][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,751][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,751][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,752][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,752][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,752][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,752][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,753][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,753][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,753][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,754][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,754][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,754][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,755][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,755][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,755][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,755][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,756][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,756][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,757][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,757][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,757][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,758][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,758][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,758][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,758][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,759][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,759][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,759][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,760][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,760][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,760][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,761][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,761][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,761][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,762][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,762][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,762][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,763][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,763][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,763][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,763][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,764][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,764][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,764][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,771][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,772][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,775][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,776][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,777][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,778][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,778][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,779][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,780][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,781][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,781][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,782][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,782][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,783][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,785][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [0].
+[ERROR][2016-08-02 23:59:33,785][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,785][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,786][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,786][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,787][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,787][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,787][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,787][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,788][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,789][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].
+[ERROR][2016-08-02 23:59:33,789][com.gtjt.xxjss.springmvc.common.util.ClassTools]Set field failed in Field [isleaf][java.lang.String] Value [1].

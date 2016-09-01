@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript">
 	var layout_west_tree;
 	$(function() {
 		layout_west_tree = $('#layout_west_tree').tree({
-			url : '<c:url value="/permission/tree" />',
+			url : '${baseUrl}/permission/tree',
 			parentField : 'pid',
 			//lines : true,
 			animate : true,
@@ -12,20 +12,21 @@
 				if (node.attributes && node.attributes.url) {
 					var url;
 					if (node.attributes.url.indexOf('/') == 0) {/*如果url第一位字符是"/"，那么代表打开的是本地的资源*/
-						url = '<c:url value="/" />' + node.attributes.url;
+						url = '${baseUrl}' + node.attributes.url;
 						if (url.indexOf('/druidController') == -1) {/*如果不是druid相关的控制器连接，那么进行遮罩层屏蔽*/
 							parent.$.messager.progress({
 								title : '提示',
 								text : '数据处理中，请稍后....'
 							});
 						}
+						addTab({
+							url : url,
+							title : node.text,
+							iconCls : node.iconCls
+						});
 					} else {/*打开跨域资源*/
+						window.open(node.attributes.url, '_blank'); 
 					}
-					addTab({
-						url : url,
-						title : node.text,
-						iconCls : node.iconCls
-					});
 				}
 			},
 			onBeforeLoad : function(node, param) {

@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>SpringMVC</title>
-<jsp:include page="inc.jsp" />
+<%@ include file="inc.jsp"%>
 <script type="text/javascript">
 	var index_tabs;
 	var index_tabsMenu;
@@ -68,16 +68,16 @@
 <body>
 
 	<div id="index_layout">
-		<div data-options="region:'north',href:'<c:url value="/layoutNorth" />'" style="height: 70px; overflow: hidden;" class="logo"></div>
-		<div data-options="region:'west',href:'<c:url value="/layoutWest" />',split:false" title="导航菜单" style="width: 200px; overflow: hidden;"></div>
+		<div data-options="region:'north',href:'${baseUrl}/layoutNorth'" style="height: 70px; overflow: hidden;" class="logo"></div>
+		<div data-options="region:'west',href:'${baseUrl}/layoutWest',split:false" title="导航菜单" style="width: 200px; overflow: hidden;"></div>
 		<div data-options="region:'center'" style="overflow: hidden;">
 			<div id="index_tabs" style="overflow: hidden;">
 				<div title="首页" data-options="border:false" style="overflow: hidden;">
-					<iframe src="<c:url value="/portalIndex" />" frameborder="0" style="border: 0; width: 100%; height: 98%;"></iframe>
+					<iframe src="${baseUrl}/portalIndex" frameborder="0" style="border: 0; width: 100%; height: 98%;"></iframe>
 				</div>
 			</div>
 		</div>
-		<div data-options="region:'south',href:'<c:url value="/layoutSouth" />',border:false" style="height: 30px; overflow: hidden;"></div>
+		<div data-options="region:'south',href:'${baseUrl}/layoutSouth',border:false" style="height: 30px; overflow: hidden;"></div>
 	</div>
 
 	<div id="index_tabsMenu" style="width: 120px; display: none;">

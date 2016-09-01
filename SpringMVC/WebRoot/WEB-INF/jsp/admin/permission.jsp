@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="rbac" uri="http://www.gtjt.xxjss.com/rbac/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
 <title>权限管理</title>
-<jsp:include page="../inc.jsp" />
+<%@ include file="../tag.jsp"%>
+<%@ include file="../inc.jsp"%>
 <c:if test="${rbac:hasPermission(activeUserInfo.id, '/permission/editPage')}">
 	<script type="text/javascript">
 		$.canEdit = true;
@@ -21,7 +19,7 @@
 	var treeGrid;
 	$(function() {
 		treeGrid = $('#treeGrid').treegrid({
-			url : '<c:url value="/permission/permissionList" />',
+			url : '${baseUrl}/permission/permissionList',
 			fit : true,
 			idField : 'id',
 			treeField : 'name',
@@ -34,7 +32,8 @@
 				title : '编号',
 				field : 'id',
 				width : 150,
-				hidden : true
+				//hidden : true,
+				checkbox:true
 			} ] ],
 			columns : [ [ {
 				field : 'name',
@@ -87,11 +86,11 @@
 				formatter : function(value, row, index) {
 					var str = '';
 					if ($.canEdit) {
-						str += $.formatString('<img onclick="editFun(\'{0}\');" src="{1}" title="编辑"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/pencil.png" />');
+						str += $.formatString('<img onclick="editFun(\'{0}\');" src="{1}" title="编辑"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/pencil.png');
 					}
 					str += '&nbsp;';
 					if ($.canDelete) {
-						str += $.formatString('<img onclick="deleteFun(\'{0}\');" src="{1}" title="删除"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/cancel.png" />');
+						str += $.formatString('<img onclick="deleteFun(\'{0}\');" src="{1}" title="删除"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/cancel.png');
 					}
 					return str;
 				}
@@ -119,7 +118,7 @@
 			title : '添加权限',
 			width : 500,
 			height : 350,
-			href : '<c:url value="/permission/addPage" />',
+			href : '${baseUrl}/permission/addPage',
 			buttons : [ {
 				width : 72,
 				text : '添加',
@@ -144,7 +143,7 @@
 						title : '提示',
 						text : '数据处理中，请稍后....'
 					});
-					$.post('<c:url value="/permission/delete" />', {
+					$.post('${baseUrl}/permission/delete', {
 						id : node.id
 					}, function(result) {
 						if (result.success) {
@@ -169,7 +168,7 @@
 				title : '编辑权限',
 				width : 500,
 				height : 350,
-				href : '<c:url value="/permission/editPage?id=" />' + node.id,
+				href : '${baseUrl}/permission/editPage?id=' + node.id,
 				buttons : [ {
 					width : 72,
 					text : '编辑',

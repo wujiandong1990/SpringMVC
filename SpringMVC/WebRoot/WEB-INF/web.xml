@@ -131,6 +131,7 @@
 		<location>/WEB-INF/jsp/error/500.jsp</location>
 	</error-page>
 	
+	<!-- 页面按钮操作级别角色访问控制 -->
 	<jsp-config>
 		<taglib>
 	        <taglib-uri>http://www.gtjt.xxjss.com/rbac/functions</taglib-uri>

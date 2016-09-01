@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSON;
+import com.gtjt.xxjss.springmvc.annotation.CustomLog;
 import com.gtjt.xxjss.springmvc.common.GlobalConstants;
 import com.gtjt.xxjss.springmvc.common.util.EHCacheUtil;
 import com.gtjt.xxjss.springmvc.exception.ParameterException;
@@ -116,6 +117,7 @@ public class UserController {
 	 */
 	@RequestMapping("/add")
 	@ResponseBody
+	@CustomLog
 	public Json add(HttpSession session, UserVo userVo) throws Exception {
 		ActiveUserInfo activeUserInfo = (ActiveUserInfo) session.getAttribute(GlobalConstants.ACTIVEUSERINFO);
 		if (activeUserInfo != null) {
@@ -144,6 +146,7 @@ public class UserController {
 	 */
 	@RequestMapping("/delete")
 	@ResponseBody
+	@CustomLog
 	public Json delete(HttpSession session, String id) throws Exception {
 		ActiveUserInfo activeUserInfo = (ActiveUserInfo) session.getAttribute(GlobalConstants.ACTIVEUSERINFO);
 		Json j = new Json();
@@ -163,6 +166,7 @@ public class UserController {
 	 */
 	@RequestMapping("/batchDelete")
 	@ResponseBody
+	@CustomLog
 	public Json batchDelete(HttpSession session, String ids) throws Exception {
 		Json j = new Json();
 		if (ids != null && ids.length() > 0) {
@@ -207,6 +211,7 @@ public class UserController {
 	 */
 	@RequestMapping("/edit")
 	@ResponseBody
+	@CustomLog
 	public Json edit(HttpSession session, UserVo userVo) throws Exception {
 		Json j = new Json();
 		try {
@@ -244,6 +249,7 @@ public class UserController {
 	 */
 	@RequestMapping("/editPwd")
 	@ResponseBody
+	@CustomLog
 	public Json editPwd(HttpSession session, UserVo userVo) throws Exception {
 		Json j = new Json();
 		userService.editPwd(session, userVo);
@@ -271,6 +277,7 @@ public class UserController {
 	 */
 	@RequestMapping("/editCurrentUserPwd")
 	@ResponseBody
+	@CustomLog
 	public Json editCurrentUserPwd(HttpSession session, String oldPwd, String pwd) throws Exception {
 		Json j = new Json();
 		if (session != null) {
@@ -316,11 +323,44 @@ public class UserController {
 	 */
 	@RequestMapping("/grant")
 	@ResponseBody
+	@CustomLog
 	public Json grant(String ids, UserVo userVo) throws Exception {
 		Json j = new Json();
 		userService.grant(ids, userVo);
 		j.setSuccess(true);
 		j.setMsg("授权成功！");
+		return j;
+	}
+	
+	/**
+	 * 跳转到用户组织机构页面
+	 * 
+	 * @return
+	 */
+	@RequestMapping("/setOrgPage")
+	public String setOrgPage(HttpServletRequest request, String ids) throws Exception {
+		request.setAttribute("ids", ids);
+		if (ids != null && !ids.equalsIgnoreCase("") && ids.indexOf(",") == -1) {
+			UserVo u = userService.getUserById(ids);
+			request.setAttribute("user", u);
+		}
+		return "/admin/userSetOrg";
+	}
+	
+	/**
+	 * 选择用户机构
+	 * 
+	 * @param ids
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping("/setOrg")
+	@CustomLog
+	public Json setOrg(String ids, UserVo user) throws Exception {
+		Json j = new Json();
+		userService.setOrg(ids, user);
+		j.setSuccess(true);
+		j.setMsg("用户机构选择成功！");
 		return j;
 	}
 	
@@ -343,10 +383,10 @@ public class UserController {
 	 * @return
 	 * @throws Exception 
 	 */
-	@RequestMapping("/currentUserResourcePage")
-	public String currentUserResourcePage(HttpServletRequest request, HttpSession session) throws Exception {
-		request.setAttribute("userResources", JSON.toJSONString(permissionService.getTreePermission()));
-		return "/user/userResource";
+	@RequestMapping("/currentUserPermissionPage")
+	public String currentUserPermissionPage(HttpServletRequest request, HttpSession session) throws Exception {
+		request.setAttribute("userPermissions", JSON.toJSONString(permissionService.getTreePermission()));
+		return "/user/userPermission";
 	}
 
 //	/**
@@ -372,37 +412,16 @@ public class UserController {
 //		return j;
 //	}
 
-
-//
-//	/**
-//	 * 用户登录时的autocomplete
-//	 * 
-//	 * @param q
-//	 *            参数
-//	 * @return
-//	 */
-//	@RequestMapping("/loginCombobox")
-//	@ResponseBody
-//	public List<User> loginCombobox(String q) {
-//		return userService.loginCombobox(q);
-//	}
-//
-//	/**
-//	 * 用户登录时的combogrid
-//	 * 
-//	 * @param q
-//	 * @param ph
-//	 * @return
-//	 */
-//	@RequestMapping("/loginCombogrid")
-//	@ResponseBody
-//	public DataGrid loginCombogrid(String q, PageHelper ph) {
-//		return userService.loginCombogrid(q, ph);
-//	}
-
 	@RequestMapping("/logout")
 	public String logout(HttpSession session) {
 		if (session != null) {
+			//清除权限缓存
+			ActiveUserInfo activeUserInfo = (ActiveUserInfo) session.getAttribute(GlobalConstants.ACTIVEUSERINFO);
+			EHCacheUtil.initCacheManager();
+			EHCacheUtil.initCache("generalCache");
+			EHCacheUtil.remove("p"+ activeUserInfo.getId());
+			
+			//清除session
 			session.invalidate();
 		}
 		return "/login";

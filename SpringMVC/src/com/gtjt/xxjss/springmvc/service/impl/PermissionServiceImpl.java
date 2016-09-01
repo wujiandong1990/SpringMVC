@@ -138,7 +138,7 @@ public class PermissionServiceImpl extends BaseServiceImpl<Permission> implement
 		//由于当前用户所属的角色，没有访问新添加的资源权限，所以在新添加资源的时候，将当前资源授权给当前用户的所有角色，以便添加资源后在资源列表中能够找到
 		Map<String, Object> params = new HashMap<String, Object>();
 		params.put("id", activeUserInfo.getId());
-		String urSql = "SELECT UR.USER_ID,UR.ROLE_ID FROM T_USER_ROLE UR WHERE UR.USER_ID = :id";
+		String urSql = "SELECT UR.USER_ID USERID,UR.ROLE_ID ROLEID FROM T_USER_ROLE UR WHERE UR.USER_ID = :id";
 		List<UserRoleVo> userRoleVos = commonDao.findBySql(urSql, params, UserRoleVo.class);
 		
 		for (UserRoleVo userRoleVo : userRoleVos) {
@@ -157,16 +157,18 @@ public class PermissionServiceImpl extends BaseServiceImpl<Permission> implement
 		String sql = "SELECT P.* FROM T_PERMISSION P START WITH P.ID = :id CONNECT BY P.PID = PRIOR ID ORDER SIBLINGS BY P.SEQ";
 		List<Permission> permissions = permissionDao.findBySql(sql, params);
 		
-		for (Permission p : permissions) {
-			params.clear();
-			params.put("permissionid", p.getId());
-			
-			//删除该权限在角色权限表中的所有的对应关系
-			String rpSql = "DELETE FROM T_ROLE_PERMISSION RP WHERE RP.PERMISSION_ID = :permissionid";
-			commonDao.executeSql(rpSql, params);
-			//删除该权限
-			String pSql = "DELETE FROM T_PERMISSION P WHERE P.ID = :permissionid";
-			commonDao.executeSql(pSql, params);
+		if (permissions != null && permissions.size() > 0) {
+			for (Permission p : permissions) {
+				params.clear();
+				params.put("permissionid", p.getId());
+				
+				//删除该权限在角色权限表中的所有的对应关系
+				String rpSql = "DELETE FROM T_ROLE_PERMISSION RP WHERE RP.PERMISSION_ID = :permissionid";
+				commonDao.executeSql(rpSql, params);
+				//删除该权限
+				String pSql = "DELETE FROM T_PERMISSION P WHERE P.ID = :permissionid";
+				commonDao.executeSql(pSql, params);
+			}
 		}
 	}
 	

@@ -90,6 +90,14 @@ public interface UserServiceI extends BaseServiceI<User> {
 	 */
 	public void grant(String ids, UserVo userVo) throws Exception;
 	
+	/**
+	 * 设置组织机构
+	 * 
+	 * @param ids
+	 * @param userVo
+	 */
+	public void setOrg(String ids, UserVo userVo) throws Exception;
+	
 //	/**
 //	 * 用户注册
 //	 * 

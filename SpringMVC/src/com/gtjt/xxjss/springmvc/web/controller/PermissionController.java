@@ -25,7 +25,7 @@ import com.gtjt.xxjss.springmvc.web.vo.PermissionVo;
 import com.gtjt.xxjss.springmvc.web.vo.Tree;
 
 /**
- * @Description: 资源控制器
+ * @Description: 权限控制器
  * @author Wjd
  * @date 2016年6月23日 上午12:23:25
  *
@@ -49,7 +49,7 @@ public class PermissionController {
 	}
 	
 	/**
-	 * @Description: 获得资源树，包括所有资源类型
+	 * @Description: 获得权限树，包括所有权限类型
 	 * @return
 	 * @throws Exception
 	 * @author Wjd
@@ -62,7 +62,7 @@ public class PermissionController {
 	}
 	
 	/**
-	 * 跳转到资源管理页面
+	 * 跳转到权限管理页面
 	 * 
 	 * @return
 	 */
@@ -72,9 +72,9 @@ public class PermissionController {
 	}
 
 	/**
-	 * 获得资源列表
+	 * 获得权限列表
 	 * 
-	 * 通过用户ID判断，他能看到的资源
+	 * 通过用户ID判断，他能看到的权限
 	 * 
 	 * 
 	 * @return
@@ -87,7 +87,7 @@ public class PermissionController {
 	}
 	
 	/**
-	 * 跳转到资源添加页面
+	 * 跳转到权限添加页面
 	 * 
 	 * @return
 	 */
@@ -134,7 +134,7 @@ public class PermissionController {
 	}
 	
 	/**
-	 * 删除资源
+	 * 删除权限
 	 * 
 	 * @param id
 	 * @return
@@ -151,7 +151,7 @@ public class PermissionController {
 	}
 	
 	/**
-	 * 跳转到资源编辑页面
+	 * 跳转到权限编辑页面
 	 * 
 	 * @return
 	 * @throws Exception 
@@ -176,7 +176,7 @@ public class PermissionController {
 	}
 
 	/**
-	 * 编辑资源
+	 * 编辑权限
 	 * 
 	 * @param permissionVo
 	 * @return

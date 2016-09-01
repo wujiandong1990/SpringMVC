@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<params>
+	<!-- 资源类型 -->
+	<resourceTypes>
+		<resourceMenu value="M" text="菜单" />
+		<resourceFun value="F" text="功能" />
+	</resourceTypes>
+
+	<!-- 状态类型 -->
+	<statusTypes>
+		<statusYes value="1" text="启用" />
+		<statusYes value="0" text="禁用" />
+	</statusTypes>
+</params>

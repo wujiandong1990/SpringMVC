@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript">
 	$(function() {
 
@@ -11,7 +11,7 @@
 		});
 
 		$('#pid').combotree({
-			url : '<c:url value="/permission/treePermission" />',
+			url : '${baseUrl}/permission/treePermission',
 			parentField : 'pid',
 			lines : true,
 			//panelHeight : 'auto',
@@ -21,7 +21,7 @@
 		});
 
 		$('#form').form({
-			url : '<c:url value="/permission/add" />',
+			url : '${baseUrl}/permission/add',
 			onSubmit : function() {
 				parent.$.messager.progress({
 					title : '提示',
@@ -61,7 +61,7 @@
 					<th>排序</th>
 					<td><input name="seq" value="0" class="easyui-numberspinner" style="width: 140px; height: 29px;" required="required" data-options="editable:false,min:0"></td>
 					<th>上级权限</th>
-					<td><select id="pid" name="pid" style="width: 140px; height: 29px;"></select><img src="<c:url value='/resources/style/images/extjs_icons/cut_red.png' />" onclick="$('#pid').combotree('clear');" /></td>
+					<td><select id="pid" name="pid" style="width: 140px; height: 29px;"></select><img src="${baseUrl}/resources/style/images/extjs_icons/cut_red.png" onclick="$('#pid').combotree('clear');" /></td>
 				</tr>
 				<tr>
 					<th>权限类型</th>

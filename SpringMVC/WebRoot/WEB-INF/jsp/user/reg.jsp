@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript" charset="utf-8">
 	$(function() {
 		$('#registerDialog').show().dialog({
@@ -20,7 +20,7 @@
 				title : '提示',
 				text : '数据处理中，请稍后....'
 			});
-			$.post('${pageContext.request.contextPath}/user/reg', $('#regForm').serialize(), function(result) {
+			$.post('${baseUrl}/user/reg', $('#regForm').serialize(), function(result) {
 				if (result.success) {
 					$('#registerDialog').dialog('close');
 					$.messager.show({

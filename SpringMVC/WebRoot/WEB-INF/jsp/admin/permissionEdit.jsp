@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript">
 	$(function() {
 		$('#iconCls').combobox({
@@ -11,7 +11,7 @@
 		});
 
 		$('#pid').combotree({
-			url : '<c:url value="/permission/treePermission" />',
+			url : '${baseUrl}/permission/treePermission',
 			parentField : 'pid',
 			lines : true,
 			//panelHeight : 'auto',
@@ -22,7 +22,7 @@
 		});
 
 		$('#form').form({
-			url : '<c:url value="/permission/edit" />',
+			url : '${baseUrl}/permission/edit',
 			onSubmit : function() {
 				parent.$.messager.progress({
 					title : '提示',
@@ -70,13 +70,13 @@
 					<th>权限类型</th>
 					<td><select name="type" class="easyui-combobox" data-options="width:140,height:29,editable:false,panelHeight:'auto'">
 							<c:forEach items="${resourceTypes}" var="resourceType">
-								<option value="${resourceType.value}">${resourceType.text}</option>
+          						<option value="${resourceType.value}" <c:if test="${permission.type==resourceType.value}">selected</c:if>>${resourceType.text}</option>
 							</c:forEach>
 					</select></td>
 					<th>状态</th>
 					<td><select name="status" class="easyui-combobox" data-options="width:140,height:29,editable:false,panelHeight:'auto'">
 							<c:forEach items="${statusTypes}" var="statusType">
-								<option value="${statusType.value}">${statusType.text}</option>
+          						<option value="${statusType.value}" <c:if test="${permission.status==statusType.value}">selected</c:if>>${statusType.text}</option>
 							</c:forEach>
 						</select></td>
 				</tr>
@@ -84,7 +84,7 @@
 					<th>排序</th>
 					<td><input name="seq" value="${permission.seq}" class="easyui-numberspinner" style="width: 140px; height: 29px;" required="required" data-options="editable:false"></td>
 					<th>上级权限</th>
-					<td><select id="pid" name="pid" style="width: 140px; height: 29px;"></select><img src="<c:url value='/resources/style/images/extjs_icons/cut_red.png' />" onclick="$('#pid').combotree('clear');" /></td>
+					<td><select id="pid" name="pid" style="width: 140px; height: 29px;"></select><img src="${baseUrl}/resources/style/images/extjs_icons/cut_red.png" onclick="$('#pid').combotree('clear');" /></td>
 				</tr>
 				<tr>
 					<th>菜单图标</th>

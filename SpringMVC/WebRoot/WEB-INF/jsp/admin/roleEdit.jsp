@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript">
 	$(function() {
 		$('#icon').combobox({
@@ -12,7 +12,7 @@
 		parent.$.messager.progress('close');
 		
 		$('#form').form({
-			url : '<c:url value="/role/edit" />',
+			url : '${baseUrl}/role/edit',
 			onSubmit : function() {
 				parent.$.messager.progress({
 					title : '提示',
@@ -53,7 +53,7 @@
 					<td>
 						<select name="status" class="easyui-combobox" data-options="width:140,height:29,editable:false,panelHeight:'auto'">
 							<c:forEach items="${statusTypes}" var="statusType">
-								<option value="${statusType.value}">${statusType.text}</option>
+          						<option value="${statusType.value}" <c:if test="${user.status==statusType.value}">selected</c:if>>${statusType.text}</option>
 							</c:forEach>
 						</select>
 					</td>

@@ -35,6 +35,8 @@ public class UserVo implements Serializable {
 	
 	private String roleIds;
 	private String roleNames;
+	private String organizationIds;
+	private String organizationNames;
 	
 	public String getId() {
 		return id;
@@ -137,6 +139,18 @@ public class UserVo implements Serializable {
 	}
 	public void setRoleNames(String roleNames) {
 		this.roleNames = roleNames;
+	}
+	public String getOrganizationIds() {
+		return organizationIds;
+	}
+	public void setOrganizationIds(String organizationIds) {
+		this.organizationIds = organizationIds;
+	}
+	public String getOrganizationNames() {
+		return organizationNames;
+	}
+	public void setOrganizationNames(String organizationNames) {
+		this.organizationNames = organizationNames;
 	}
 	
 

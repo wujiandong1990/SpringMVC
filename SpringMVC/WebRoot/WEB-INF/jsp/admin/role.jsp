@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="rbac" uri="http://www.gtjt.xxjss.com/rbac/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
 <title>角色管理</title>
-<jsp:include page="../inc.jsp" />
+<%@ include file="../tag.jsp"%>
+<%@ include file="../inc.jsp"%>
 <c:if test="${rbac:hasPermission(activeUserInfo.id, '/role/editPage')}">
 	<script type="text/javascript">
 		$.canEdit = true;
@@ -26,7 +24,7 @@
 	var dataGrid;
 	$(function() {
 		dataGrid = $('#dataGrid').datagrid({
-			url : '<c:url value="/role/roleList" />',
+			url : '${baseUrl}/role/roleList',
 			fit : true,
 			fitColumns : false,
 			border : false,
@@ -46,7 +44,8 @@
 				field : 'id',
 				title : '编号',
 				width : 150,
-				hidden : true
+				//hidden : true,
+				checkbox : true
 			}, {
 				field : 'name',
 				title : '角色名称',
@@ -93,15 +92,15 @@
 				formatter : function(value, row, index) {
 					var str = '';
 					if ($.canEdit) {
-						str += $.formatString('<img onclick="editFun(\'{0}\');" src="{1}" title="编辑"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/pencil.png" />');
+						str += $.formatString('<img onclick="editFun(\'{0}\');" src="{1}" title="编辑"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/pencil.png');
 					}
 					str += '&nbsp;';
 					if ($.canGrant) {
-						str += $.formatString('<img onclick="grantFun(\'{0}\');" src="{1}" title="授权"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/key.png" />');
+						str += $.formatString('<img onclick="grantFun(\'{0}\');" src="{1}" title="授权"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/key.png');
 					}
 					str += '&nbsp;';
 					if ($.canDelete) {
-						str += $.formatString('<img onclick="deleteFun(\'{0}\');" src="{1}" title="删除"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/cancel.png" />');
+						str += $.formatString('<img onclick="deleteFun(\'{0}\');" src="{1}" title="删除"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/cancel.png');
 					}
 					return str;
 				}
@@ -129,7 +128,7 @@
 			title : '添加角色',
 			width : 500,
 			height : 300,
-			href : '<c:url value="/role/addPage" />',
+			href : '${baseUrl}/role/addPage',
 			buttons : [ {
 				width : 72,
 				text : '添加',
@@ -156,7 +155,7 @@
 					title : '提示',
 					text : '数据处理中，请稍后....'
 				});
-				$.post('<c:url value="/role/delete" />', {
+				$.post('${baseUrl}/role/delete', {
 					id : id
 				}, function(result) {
 					if (result.success) {
@@ -181,7 +180,7 @@
 			title : '编辑角色',
 			width : 500,
 			height : 300,
-			href : '<c:url value="/role/editPage?id=" />' + id,
+			href : '${baseUrl}/role/editPage?id=' + id,
 			buttons : [ {
 				width : 72,
 				text : '编辑',
@@ -206,7 +205,7 @@
 			title : '角色授权',
 			width : 500,
 			height : 500,
-			href : '<c:url value="/role/grantPage?id=" />' + id,
+			href : '${baseUrl}/role/grantPage?id=' + id,
 			buttons : [ {
 				width : 72,
 				text : '授权',

@@ -1,5 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript" charset="utf-8">
 	/**
 	 * @author 孙宇
@@ -50,22 +50,9 @@
 	};
 
 	function logoutFun(b) {
-		/* 
-		$.getJSON('<c:url value="/user/logout"/>', {
-				t : new Date()
-			}, function(result) {
-				if (b) {
-					location.replace('<c:url value="/" />');
-				} else {
-					$('#sessionInfoDiv').html('');
-					$('#loginDialog').dialog('open');
-				}
-			}); 
-		*/
-			
 		$.messager.confirm('提示', '您确定要退出吗?', function(r) {
 			if (r) {
-				window.location.href = '<c:url value="/user/logout" />';
+				window.location.href = '${baseUrl}/user/logout';
 			}
 		});
 		
@@ -76,7 +63,7 @@
 			title : '修改密码',
 			width : 350,
 			height : 300,
-			href : '<c:url value="/user/editCurrentUserPwdPage" />',
+			href : '${baseUrl}/user/editCurrentUserPwdPage',
 			buttons : [ {
 				width : 72,
 				text : '修改',
@@ -92,15 +79,15 @@
 			title : '我的角色',
 			width : 300,
 			height : 250,
-			href : '<c:url value="/user/currentUserRolePage" />'
+			href : '${baseUrl}/user/currentUserRolePage'
 		});
 	}
-	function currentUserResource() {
+	function currentUserPermission() {
 		parent.$.modalDialog({
-			title : '我可以访问的资源',
+			title : '我拥有的全部权限',
 			width : 400,
 			height : 500,
-			href : '<c:url value="/user/currentUserResourcePage" />'
+			href : '${baseUrl}/user/currentUserPermissionPage'
 		});
 	}
 </script>
@@ -133,7 +120,7 @@
 	<div class="menu-sep"></div>
 	<div onclick="currentUserRole();">我的角色</div>
 	<div class="menu-sep"></div>
-	<div onclick="currentUserResource();">我的权限</div>
+	<div onclick="currentUserPermission();">我的权限</div>
 </div>
 <div id="layout_north_zxMenu" style="width: 100px; display: none;">
 	<div onclick="logoutFun(true);">退出系统</div>

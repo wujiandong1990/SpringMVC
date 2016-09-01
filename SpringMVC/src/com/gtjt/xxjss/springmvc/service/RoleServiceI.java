@@ -7,7 +7,6 @@ import javax.servlet.http.HttpSession;
 import com.gtjt.xxjss.springmvc.model.Role;
 import com.gtjt.xxjss.springmvc.web.vo.ActiveUserInfo;
 import com.gtjt.xxjss.springmvc.web.vo.RoleVo;
-import com.gtjt.xxjss.springmvc.web.vo.Tree;
 
 
 /**

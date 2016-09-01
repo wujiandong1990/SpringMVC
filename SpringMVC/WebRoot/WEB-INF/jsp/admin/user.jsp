@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="rbac" uri="http://www.gtjt.xxjss.com/rbac/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
 <title>用户管理</title>
-<jsp:include page="../inc.jsp" />
+<%@ include file="../tag.jsp"%>
+<%@ include file="../inc.jsp"%>
 <c:if test="${rbac:hasPermission(activeUserInfo.id, '/user/editPage') }">
 	<script type="text/javascript">
 		$.canEdit = true;
@@ -22,6 +20,11 @@
 		$.canGrant = true;
 	</script>
 </c:if>
+<c:if test="${rbac:hasPermission(activeUserInfo.id, '/user/setOrgPage') }">
+	<script type="text/javascript">
+		$.canSetOrg = true;
+	</script>
+</c:if>
 <c:if test="${rbac:hasPermission(activeUserInfo.id, '/user/editPwdPage') }">
 	<script type="text/javascript">
 		$.canEditPwd = true;
@@ -31,7 +34,7 @@
 	var dataGrid;
 	$(function() {
 		dataGrid = $('#dataGrid').datagrid({
-			url : '<c:url value="/user/userList" />',
+			url : '${baseUrl}/user/userList',
 			fit : true,
 			fitColumns : false,
 			border : false,
@@ -41,8 +44,9 @@
 			pageList : [ 10, 20, 30, 40, 50 ],
 			sortName : 'username',
 			sortOrder : 'asc',
-			checkOnSelect : false,
-			selectOnCheck : false,
+			rownumbers : true,
+			checkOnSelect : true,
+			selectOnCheck : true,
 			nowrap : false,
 			frozenColumns : [ [ {
 				field : 'id',
@@ -88,19 +92,23 @@
 				formatter : function(value, row, index) {
 					var str = '';
 					if ($.canEdit) {
-						str += $.formatString('<img onclick="editFun(\'{0}\');" src="{1}" title="编辑"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/pencil.png" />');
+						str += $.formatString('<img onclick="editFun(\'{0}\');" src="{1}" title="编辑"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/pencil.png');
 					}
 					str += '&nbsp;';
 					if ($.canGrant) {
-						str += $.formatString('<img onclick="grantFun(\'{0}\');" src="{1}" title="授权"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/key.png" />');
+						str += $.formatString('<img onclick="grantFun(\'{0}\');" src="{1}" title="授权"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/key.png');
+					}
+					str += '&nbsp;';
+					if ($.canSetOrg) {
+						str += $.formatString('<img onclick="setOrgFun(\'{0}\');" src="{1}" title="组织机构"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/shield.png');
 					}
 					str += '&nbsp;';
 					if ($.canDelete) {
-						str += $.formatString('<img onclick="deleteFun(\'{0}\');" src="{1}" title="删除"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/cancel.png" />');
+						str += $.formatString('<img onclick="deleteFun(\'{0}\');" src="{1}" title="删除"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/cancel.png');
 					}
 					str += '&nbsp;';
 					if ($.canEditPwd) {
-						str += $.formatString('<img onclick="editPwdFun(\'{0}\');" src="{1}" title="修改密码"/>', row.id, '<c:url value="/resources/style/images/extjs_icons/lock/lock_edit.png" />');
+						str += $.formatString('<img onclick="editPwdFun(\'{0}\');" src="{1}" title="修改密码"/>', row.id, '${baseUrl}/resources/style/images/extjs_icons/lock/lock_edit.png');
 					}
 					return str;
 				}
@@ -129,7 +137,7 @@
 			title : '增加用户',
 			width : 500,
 			height : 300,
-			href : '<c:url value="/user/addPage" />',
+			href : '${baseUrl}/user/addPage',
 			buttons : [ {
 				width : 72,
 				text : '增加',
@@ -148,7 +156,7 @@
 			title : '编辑用户密码',
 			width : 500,
 			height : 300,
-			href : '<c:url value="user/editPwdPage?id=" />' + id,
+			href : '${baseUrl}/user/editPwdPage?id=' + id,
 			buttons : [ {
 				width : 72,
 				text : '编辑',
@@ -176,7 +184,7 @@
 						title : '提示',
 						text : '数据处理中，请稍后....'
 					});
-					$.post('<c:url value="/user/delete" />', {
+					$.post('${baseUrl}/user/delete', {
 						id : id
 					}, function(result) {
 						if (result.success) {
@@ -214,7 +222,7 @@
 							flag = true;
 						}
 					}
-					$.getJSON('<c:url value="/user/batchDelete" />', {
+					$.getJSON('${baseUrl}/user/batchDelete', {
 						ids : ids.join(',')
 					}, function(result) {
 						if (result.success) {
@@ -252,7 +260,7 @@
 			title : '编辑用户',
 			width : 500,
 			height : 300,
-			href : '<c:url value="user/editPage?id=" />' + id,
+			href : '${baseUrl}/user/editPage?id=' + id,
 			buttons : [ {
 				width : 72,
 				text : '编辑',
@@ -276,7 +284,7 @@
 				title : '用户授权',
 				width : 500,
 				height : 300,
-				href : '<c:url value="user/grantPage?ids=" />' + ids.join(','),
+				href : '${baseUrl}/user/grantPage?ids=' + ids.join(','),
 				buttons : [ {
 					width : 72,
 					text : '授权',
@@ -301,7 +309,7 @@
 			title : '用户授权',
 			width : 500,
 			height : 300,
-			href : '<c:url value="user/grantPage?ids=" />' + id,
+			href : '${baseUrl}/user/grantPage?ids=' + id,
 			buttons : [ {
 				width : 72,
 				text : '授权',
@@ -314,24 +322,24 @@
 		});
 	};
 	
-	function selUsrOrgFun(id) {
+	function setOrgFun(id) {
 		dataGrid.datagrid('unselectAll').datagrid('uncheckAll');
 		parent.$.modalDialog({
-			title : '用户机构',
+			title : '设置机构',
 			width : 500,
 			height : 300,
-			href : '<c:url value="user/usrOrgPage?ids=" />' + id,
+			href : '${baseUrl}/user/setOrgPage?ids=' + id,
 			buttons : [ {
 				width : 72,
-				text : '保存',
+				text : '设置',
 				handler : function() {
-					parent.$.modalDialog.openner_dataGrid = dataGrid;//因为保存成功之后，需要刷新这个dataGrid，所以先预定义好
+					parent.$.modalDialog.openner_dataGrid = dataGrid;//因为授权成功之后，需要刷新这个dataGrid，所以先预定义好
 					var f = parent.$.modalDialog.handler.find('#form');
 					f.submit();
 				}
 			} ]
 		});
-	}
+	};
 
 	function searchFun() {
 		dataGrid.datagrid('load', $.serializeObject($('#searchForm')));

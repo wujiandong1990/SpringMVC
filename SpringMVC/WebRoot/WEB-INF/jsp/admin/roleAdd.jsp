@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript">
 	$(function() {
 		$('#icon').combobox({
@@ -12,7 +12,7 @@
 		parent.$.messager.progress('close');
 		
 		$('#form').form({
-			url : '<c:url value="/role/add" />',
+			url : '${baseUrl}/role/add',
 			onSubmit : function() {
 				parent.$.messager.progress({
 					title : '提示',

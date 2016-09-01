@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <title>SpringMVC</title>
-<jsp:include page="inc.jsp" />
+<%@ include file="inc.jsp"%>
 <script type="text/javascript" charset="utf-8">
 	var loginDialog;
 	$(function() {
@@ -15,7 +14,7 @@
 		});
 		
 		$('#form').form({
-			url : '<c:url value="/user/login" />',
+			url : '${baseUrl}/user/login',
 			onSubmit : function() {
 				$.messager.progress({
 					title : '提示',
@@ -31,7 +30,7 @@
 				$.messager.progress('close');
 				result = $.parseJSON(result);
 				if (result.success) {
-					window.location.href = '<c:url value="/index" />';
+					window.location.href = '${baseUrl}/index';
 				} else {
 					$('#tip').html(result.msg);
 					$('#tipline').show();

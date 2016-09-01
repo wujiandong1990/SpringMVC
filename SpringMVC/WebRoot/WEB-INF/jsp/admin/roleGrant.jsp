@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript">
 	var permissionTree;
 	$(function() {
 		permissionTree = $('#permissionTree').tree({
-			url : '<c:url value="/permission/treePermission" />',
+			url : '${baseUrl}/permission/treePermission',
 			parentField : 'pid',
 			//lines : true,
 			checkbox : true,
@@ -40,7 +40,7 @@
 		});
 
 		$('#form').form({
-			url : '<c:url value="/role/grant" />',
+			url : '${baseUrl}/role/grant',
 			onSubmit : function() {
 				parent.$.messager.progress({
 					title : '提示',

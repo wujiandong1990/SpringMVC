@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../tag.jsp"%>
 <script type="text/javascript">
 	$(function() {
 		parent.$.messager.progress('close');
 		
 		$('#roleIds').combobox({
-			url : '<c:url value="/role/roleList" />',
+			url : '${baseUrl}/role/roleList',
             valueField : 'id',
             textField : 'name',
             value : $.stringToList('${user.roleIds}'),
@@ -14,7 +14,7 @@
 		});
 		
 		$('#form').form({
-			url : '<c:url value="/user/grant" />',
+			url : '${baseUrl}/user/grant',
 			onSubmit : function() {
 				parent.$.messager.progress({
 					title : '提示',
@@ -49,7 +49,7 @@
 					<%-- <th>编号</th>
 					<td><input name="ids" type="text" class="span2" value="${ids}" readonly="readonly"></td> --%>
 					<th>所属角色</th>
-					<td><select id="roleIds" name="roleIds" style="width: 280px; height: 29px;"></select><img src="<c:url value='/resources/style/images/extjs_icons/cut_red.png' />" onclick="$('#roleIds').combobox('clear');" /></td>
+					<td><select id="roleIds" name="roleIds" style="width: 280px; height: 29px;"></select><img src="${baseUrl}/resources/style/images/extjs_icons/cut_red.png" onclick="$('#roleIds').combobox('clear');" /></td>
 				</tr>
 			</table>
 		</form>

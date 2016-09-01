@@ -145,9 +145,9 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
 	public UserVo getUserById(String id) throws Exception {
 		Map<String, Object> params = new HashMap<String, Object>();
 		params.put("id", id);
-		String sql = "SELECT UAR.ID,UAR.USERNAME,UAR.NICKNAME,UAR.STATUS,TO_CHAR(WM_CONCAT(ROLEID)) ROLEIDS,TO_CHAR(WM_CONCAT(ROLENAME)) ROLENAMES FROM "
-				+ "(SELECT U.ID,U.USERNAME,U.NICKNAME,U.STATUS,R.ID ROLEID,R.NAME ROLENAME FROM T_USER U, T_USER_ROLE UR, T_ROLE R WHERE U.ID = UR.USER_ID(+) AND UR.ROLE_ID = R.ID(+) AND "
-				+ "U.ID = :id ORDER BY U.ID, R.ID) UAR GROUP BY UAR.ID,UAR.USERNAME,UAR.NICKNAME,UAR.STATUS";
+		String sql = "SELECT UARO.ID,UARO.USERNAME,UARO.NICKNAME,UARO.STATUS,TO_CHAR(WM_CONCAT(ROLEID)) ROLEIDS, TO_CHAR(WM_CONCAT(ROLENAME)) ROLENAMES,TO_CHAR(WM_CONCAT(ORGANIZATIONID)) ORGANIZATIONIDS,TO_CHAR(WM_CONCAT(ORGANIZATIONNAME)) ORGANIZATIONNAMES FROM "
+				+ "(SELECT U.ID,U.USERNAME,U.NICKNAME,U.STATUS, R.ID ROLEID,R.NAME ROLENAME,'' ORGANIZATIONID,'' ORGANIZATIONNAME FROM T_USER U, T_USER_ROLE UR, T_ROLE R WHERE U.ID = UR.USER_ID(+) AND UR.ROLE_ID = R.ID(+) AND U.ID = :id UNION ALL "
+				+ "SELECT U.ID,U.USERNAME,U.NICKNAME,U.STATUS,'' ROLEID,'' ROLENAME,O.ID ORGANIZATIONID,O.NAME ORGANIZATIONNAME FROM T_USER U, T_USER_ORGANIZATION UO, T_ORGANIZATION O WHERE U.ID = UO.USER_ID(+) AND UO.ORGANIZATION_ID = O.ID(+) AND U.ID = :id) UARO GROUP BY UARO.ID, UARO.USERNAME, UARO.NICKNAME, UARO.STATUS";
 		
 		List<UserVo> userVos = commonDao.findBySql(sql, params, UserVo.class);
 
@@ -218,7 +218,7 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
 	}
 
 	@Override
-	public void grant(String ids, UserVo userVo)  throws Exception {
+	public void grant(String ids, UserVo userVo) throws Exception {
 		if (ids != null && ids.length() > 0) {
 			for (String id : ids.split(",")) {
 				if (id != null && !id.equalsIgnoreCase("")) {
@@ -241,6 +241,36 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
 							urInsSql += "SELECT '" + id + "', '" + roleId + "' FROM DUAL";
 						}
 						commonDao.executeSql(urInsSql);
+					}
+				}
+			}
+		}
+	}
+	
+	@Override
+	public void setOrg(String ids, UserVo userVo) throws Exception {
+		if (ids != null && ids.length() > 0) {
+			for (String id : ids.split(",")) {
+				if (id != null && !id.equalsIgnoreCase("")) {
+					//删除该用户在用户机构表中的所有对应关系
+					Map<String, Object> params = new HashMap<String, Object>();
+					params.put("id", id);
+					String uoDelSql = "DELETE FROM T_USER_ORGANIZATION UO WHERE UO.USER_ID = :id";
+					commonDao.executeSql(uoDelSql, params);
+					
+					//在用户机构表中插入该用户所属的所有机构
+					if (userVo.getOrganizationIds() != null) {
+						String uoInsSql = "INSERT INTO T_USER_ORGANIZATION (USER_ID, ORGANIZATION_ID) ";
+						boolean b = false;
+						for (String organizationId : userVo.getOrganizationIds().split(",")) {
+							if (b) {
+								uoInsSql += " UNION ";
+							} else {
+								b = true;
+							}
+							uoInsSql += "SELECT '" + id + "', '" + organizationId + "' FROM DUAL";
+						}
+						commonDao.executeSql(uoInsSql);
 					}
 				}
 			}

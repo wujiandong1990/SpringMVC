@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <title></title>
-<jsp:include page="../inc.jsp"></jsp:include>
+<%@ include file="../tag.jsp"%>
+<%@ include file="../inc.jsp"%>
 <script type="text/javascript" charset="utf-8">
 	var portalLayout;
 	var portal;
@@ -24,25 +24,25 @@
 			title : 'link',
 			height : 200,
 			collapsible : true,
-			href : '<c:url value="/portalLink" />'
+			href : '${baseUrl}/portalLink'
 		}, {
 			id : 'p2',
 			title : '修复数据库',
 			height : 200,
 			collapsible : true,
-			href : '<c:url value="/portalRepair" />'
+			href : '${baseUrl}/portalRepair'
 		}, {
 			id : 'p3',
 			title : 'ChangeLog',
 			height : 200,
 			collapsible : true,
-			href : '<c:url value="/portalAbout" />'
+			href : '${baseUrl}/portalAbout'
 		}, {
 			id : 'p4',
 			title : '面板顺序说明',
 			height : 200,
 			collapsible : true,
-			href : '<c:url value="/portalSeq" />'
+			href : '${baseUrl}/portalSeq'
 		} ];
 
 		portal = $('#portal').portal({
